@@ -8,14 +8,15 @@
 <style>
   :root { --cream:#f6f0e6; --navy:#282e4a; --gold:#b08d57; --grey:#7a756e; }
   * { box-sizing:border-box; }
-  body { margin:0; background:var(--cream); color:var(--navy); font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif; }
+  html,body { overflow-x:hidden; }
+  body { margin:0; word-break:keep-all; overflow-wrap:anywhere; background:var(--cream); color:var(--navy); font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif; }
   .wrap { max-width:520px; margin:0 auto; padding:28px 18px 60px; }
   .notice { background:#fff; border:1px solid #e6dccb; border-radius:12px; padding:10px 14px; font-size:13px; color:var(--grey); line-height:1.5; }
   header { text-align:center; margin:26px 0 22px; }
   header img { width:96px; height:96px; border-radius:50%; border:3px solid var(--gold); object-fit:cover; }
   h1 { font-family:"Noto Serif KR",serif; font-size:26px; margin:12px 0 4px; }
   .sub { color:var(--grey); font-size:14px; }
-  .ai { display:inline-block; margin-top:8px; font-size:12px; background:var(--navy); color:#fff; border-radius:20px; padding:3px 10px; }
+  .ai { display:inline-block; max-width:100%; line-height:1.4; margin-top:8px; font-size:12px; background:var(--navy); color:#fff; border-radius:20px; padding:3px 10px; }
   .card { background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 6px 18px rgba(40,46,74,.08); margin:18px 0; }
   .card img { width:100%; display:block; }
   .body { padding:16px 18px 18px; }
@@ -35,7 +36,7 @@
     <img src="vivian.jpg" alt="비비안">
     <h1>비비안의 진짜 가격</h1>
     <div class="sub">생활 물건, 진짜 얼마인지 숫자로 알려 드려요</div>
-    <div class="ai">AI로 만든 가상인물입니다 · 실제 사용 후기가 아닙니다</div>
+    <div class="ai">AI로 만든 가상인물 · 실제 사용 후기가 아닙니다</div>
   </header>
 
   <div class="card" id="ep1">
