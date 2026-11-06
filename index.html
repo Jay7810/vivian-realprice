@@ -4,22 +4,60 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>비비안의 건강한 살림 · 영상 속 제품</title>
-<meta name="description" content="일흔 살 비비안의 건강한 한 끼와 생활 지혜. 영상에 나온 제품 링크 모음.">
+<meta name="description" content="일흔 살 비비안의 건강한 한 끼와 생활 지혜. 영상에 나온 재료·도구 링크 모음.">
 <style>
-  :root { --cream:#f6f0e6; --navy:#282e4a; --gold:#b08d57; --grey:#7a756e; }
+  :root { --cream:#f6f0e6; --navy:#282e4a; --gold:#b08d57; --grey:#7a756e; --green:#3f7d4e; }
   * { box-sizing:border-box; }
   html,body { overflow-x:hidden; }
   body { margin:0; word-break:keep-all; overflow-wrap:anywhere; background:var(--cream); color:var(--navy); font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif; }
-  .wrap { max-width:520px; margin:0 auto; padding:28px 18px 60px; }
-  .notice { background:#fff; border:1px solid #e6dccb; border-radius:12px; padding:10px 14px; font-size:13px; color:var(--grey); line-height:1.5; }
-  header { text-align:center; margin:26px 0 22px; }
-  header img { width:96px; height:96px; border-radius:50%; border:3px solid var(--gold); object-fit:cover; }
-  h1 { font-family:"Noto Serif KR",serif; font-size:26px; margin:12px 0 4px; }
+  a { -webkit-tap-highlight-color: rgba(0,0,0,.05); }
+  .wrap { max-width:520px; margin:0 auto; padding:22px 16px 60px; }
+  .notice { background:#fff; border:1px solid #e6dccb; border-radius:12px; padding:9px 13px; font-size:12px; color:var(--grey); line-height:1.5; }
+  header { text-align:center; margin:20px 0 16px; }
+  header img { width:84px; height:84px; border-radius:50%; border:3px solid var(--gold); object-fit:cover; }
+  h1 { font-family:"Noto Serif KR",serif; font-size:24px; margin:10px 0 4px; }
   .sub { color:var(--grey); font-size:14px; }
-  .ai { display:inline-block; max-width:100%; line-height:1.4; margin-top:8px; font-size:12px; background:var(--navy); color:#fff; border-radius:20px; padding:3px 10px; }
+  .ai { display:inline-block; max-width:100%; line-height:1.4; margin-top:8px; font-size:11px; background:#e9e1d3; color:var(--grey); border-radius:20px; padding:3px 10px; }
   .jump { text-align:center; font-size:14px; color:var(--grey); margin:6px 0 4px; }
   .jump a { color:var(--navy); font-weight:700; text-decoration:none; padding:0 4px; }
-  .no { position:absolute; margin:12px; background:var(--gold); color:#fff; font-weight:800; font-size:18px; border-radius:20px; padding:4px 14px; }
+
+  /* 최신 영상 */
+  .latest { display:block; text-decoration:none; color:inherit; background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 6px 18px rgba(40,46,74,.10); margin:16px 0 10px; }
+  .latest img { width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
+  .latest .b { padding:14px 16px 16px; }
+  .tag { display:inline-block; background:var(--green); color:#fff; font-size:12px; font-weight:800; border-radius:20px; padding:3px 10px; }
+  .latest h2 { font-size:20px; margin:8px 0 4px; }
+  .latest p { margin:0; font-size:14px; color:var(--grey); line-height:1.55; }
+  .go { display:block; text-align:center; margin-top:12px; background:var(--green); color:#fff; padding:14px; border-radius:12px; font-size:16px; font-weight:800; }
+
+  section.food { margin-top:22px; }
+  .sec-h { font-size:17px; font-weight:800; margin:18px 2px 10px; }
+  .sec-h small { font-weight:600; color:var(--grey); font-size:13px; }
+
+  /* 도구 카드 2개 */
+  .tools { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:10px; }
+  .tool { position:relative; display:block; text-decoration:none; color:inherit; background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 4px 14px rgba(40,46,74,.08); }
+  .tool img { width:100%; display:block; aspect-ratio:1/1; object-fit:contain; background:#fff; }
+  .tool .t { padding:10px 11px 12px; }
+  .tool .nm { font-size:14px; font-weight:800; line-height:1.35; }
+  .tool .mt { font-size:12px; color:var(--grey); margin-top:4px; line-height:1.45; }
+  .tool .bt { display:block; text-align:center; margin-top:9px; background:var(--navy); color:#fff; padding:10px 6px; border-radius:10px; font-size:14px; font-weight:800; }
+
+  /* 재료 목록 */
+  .ings { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:10px; }
+  .ing > div { min-width:0; }
+  .ing { display:flex; gap:9px; align-items:center; text-decoration:none; color:inherit; background:#fff; border-radius:14px; padding:8px; box-shadow:0 3px 10px rgba(40,46,74,.06); }
+  .ing img { width:58px; height:58px; border-radius:10px; object-fit:cover; flex:none; background:#fff; }
+  .ing .nm { font-size:14px; font-weight:800; }
+  .ing .mt { font-size:11px; color:var(--grey); line-height:1.35; margin-top:2px; }
+  .ing .ar { font-size:12px; color:var(--green); font-weight:800; margin-top:3px; }
+
+  .recipe { background:#fff; border-radius:14px; padding:12px 14px; font-size:14px; line-height:1.7; margin-top:12px; }
+  .recipe b { color:var(--green); }
+
+  /* 예전 상품 카드 */
+  .no { position:absolute; margin:12px; background:var(--gold); color:#fff; font-weight:800; font-size:18px; border-radius:20px; padding:4px 14px; z-index:1; }
+  .tool .no { margin:8px; font-size:14px; padding:3px 10px; }
   .card { position:relative; background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 6px 18px rgba(40,46,74,.08); margin:18px 0; }
   .card img { width:100%; display:block; }
   .body { padding:16px 18px 18px; }
@@ -28,7 +66,8 @@
   .meta { font-size:14px; color:var(--grey); line-height:1.6; }
   .num { color:var(--navy); font-weight:700; }
   .btn { display:block; text-align:center; margin-top:14px; background:var(--navy); color:#fff; text-decoration:none; padding:14px; border-radius:12px; font-size:16px; font-weight:700; }
-  .btn:active { opacity:.85; }
+  .btn:active, .go:active, .tool:active, .ing:active { opacity:.85; }
+  .older { margin-top:30px; border-top:1px dashed #d8ccb8; padding-top:10px; }
   footer { margin-top:28px; font-size:12px; color:var(--grey); line-height:1.6; text-align:center; }
 </style>
 </head>
@@ -42,40 +81,97 @@
     <div class="ai">AI로 만든 가상인물 · 실제 사용 후기가 아닙니다</div>
   </header>
 
-  <div class="jump">상품 번호로 찾기 · <a href="#n2">2번</a> · <a href="#n1">1번</a></div>
-
-  <div class="card" id="n2">
-    <div class="no">2번</div>
-    <img src="mount.jpg" alt="스위코 맥세이프 무한흡착 거치대">
-    <div class="body">
-      <div class="ep">차량용인데 주방·책상에도 붙여 쓰는 거치대</div>
-      <div class="name">스위코 맥세이프 무한흡착 핸드폰 거치대</div>
-      <div class="meta">
-        바닥 링을 돌리면 진공으로 붙고, 폰은 자석(맥세이프)으로 붙여요<br>
-        쿠팡 별점 <span class="num">4.5</span> · 후기 7,012개 (2026년 11월 5일 기준)<br>
-        맥세이프 지원 폰(아이폰 12 이후)이나 자석 링을 붙인 폰에 맞아요.
-      </div>
-      <a class="btn" href="https://link.coupang.com/a/ipEZd0vdLg" rel="sponsored nofollow">쿠팡에서 가격 보기</a>
+  <a class="latest" href="#food1">
+    <img src="food01_cover.jpg" alt="10분 아침 채소찜">
+    <div class="b">
+      <span class="tag">새 영상 · 요리 1편</span>
+      <h2>10분 아침 채소찜</h2>
+      <p>영상에 나온 찜냄비·들기름과 재료 8가지를 한곳에 모았어요.</p>
+      <span class="go">영상 속 재료·도구 보기 ↓</span>
     </div>
-  </div>
+  </a>
 
-  <div class="card" id="n1">
-    <div class="no">1번</div>
-    <img src="carbon.jpg" alt="곰표한일 EMF 카본 탄소매트">
-    <div class="body">
-      <div class="ep">히터 틀고 자면 한 달 4만 원</div>
-      <div class="name">곰표한일 EMF 카본 탄소매트</div>
-      <div class="meta">
-        하룻밤(8시간) 약 <span class="num">290원</span> · 소비전력 170W<br>
-        쿠팡 별점 <span class="num">4.7</span> · 후기 14,831개 (2026년 11월 5일 기준)<br>
-        전기료는 정격 소비전력 × 8시간 × 한전 2단계 요금(214.6원/kWh)으로 계산한 최대치예요.
+  <div class="jump">상품 번호로 찾기 · <a href="#n4">4번</a> · <a href="#n3">3번</a> · <a href="#n2">2번</a> · <a href="#n1">1번</a></div>
+
+  <section class="food" id="food1">
+    <div class="sec-h">🍲 요리 1편 · 10분 아침 채소찜 <small>(2인분)</small></div>
+
+    <div class="tools">
+      <a class="tool" id="n3" href="https://link.coupang.com/a/is7xrjlwbs" rel="sponsored nofollow">
+        <div class="no">3번</div>
+        <img src="food_pot.jpg" alt="퀸센스 다용도 찜냄비">
+        <div class="t">
+          <div class="nm">퀸센스 다용도 찜냄비 28cm</div>
+          <div class="mt">영상 속 찜기 · 인덕션 겸용<br>별점 4.5 · 후기 4,821개</div>
+          <span class="bt">쿠팡에서 보기</span>
+        </div>
+      </a>
+      <a class="tool" id="n4" href="https://link.coupang.com/a/is7xuZXI16" rel="sponsored nofollow">
+        <div class="no">4번</div>
+        <img src="food_oil.jpg" alt="전연화 들기름">
+        <div class="t">
+          <div class="nm">전연화 들기름 300ml</div>
+          <div class="mt">드레싱 2큰술<br>별점 4.5 · 후기 2.5만 개</div>
+          <span class="bt">쿠팡에서 보기</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="sec-h">재료 <small>· 누르면 쿠팡 상품으로 바로 가요</small></div>
+    <div class="ings">
+      <a class="ing" href="https://link.coupang.com/a/is7xyE2O5I" rel="sponsored nofollow"><img src="food_cabbage.jpg" alt="양배추"><div><div class="nm">양배추</div><div class="mt">1/4통 사용</div><div class="ar">쿠팡 보기 ›</div></div></a>
+      <a class="ing" href="https://link.coupang.com/a/is7xCqWigS" rel="sponsored nofollow"><img src="food_broccoli.jpg" alt="브로콜리"><div><div class="nm">브로콜리</div><div class="mt">1/2송이 사용</div><div class="ar">쿠팡 보기 ›</div></div></a>
+      <a class="ing" href="https://link.coupang.com/a/is7xGeYz4C" rel="sponsored nofollow"><img src="food_pumpkin.jpg" alt="단호박"><div><div class="nm">단호박</div><div class="mt">1/4개 사용</div><div class="ar">쿠팡 보기 ›</div></div></a>
+      <a class="ing" href="https://link.coupang.com/a/is7xJ7hkFa" rel="sponsored nofollow"><img src="food_carrot.jpg" alt="당근"><div><div class="nm">당근</div><div class="mt">1/2개 사용</div><div class="ar">쿠팡 보기 ›</div></div></a>
+      <a class="ing" href="https://link.coupang.com/a/is7xNJENhs" rel="sponsored nofollow"><img src="food_shiitake.jpg" alt="표고버섯"><div><div class="nm">표고버섯</div><div class="mt">3개 사용</div><div class="ar">쿠팡 보기 ›</div></div></a>
+      <a class="ing" href="https://link.coupang.com/a/is7xREsWDk" rel="sponsored nofollow"><img src="food_soy.jpg" alt="양조간장"><div><div class="nm">양조간장</div><div class="mt">드레싱 1큰술</div><div class="ar">쿠팡 보기 ›</div></div></a>
+      <a class="ing" href="https://link.coupang.com/a/is7xVs5hYq" rel="sponsored nofollow"><img src="food_vinegar.jpg" alt="사과식초"><div><div class="nm">사과식초</div><div class="mt">드레싱 1큰술</div><div class="ar">쿠팡 보기 ›</div></div></a>
+      <a class="ing" href="https://link.coupang.com/a/is7xY5I60a" rel="sponsored nofollow"><img src="food_sesame.jpg" alt="볶음참깨"><div><div class="nm">볶음참깨</div><div class="mt">마지막에 톡톡</div><div class="ar">쿠팡 보기 ›</div></div></a>
+    </div>
+
+    <div class="recipe">
+      <b>① 썰기</b> 채소를 모두 한입 크기로 썰어요.<br>
+      <b>② 찌기</b> 물이 끓으면 단호박·당근 먼저 5분, 나머지를 넣고 5분 더.<br>
+      <b>③ 드레싱</b> 들기름 2 · 간장 1 · 식초 1큰술을 섞어 두르고 참깨 톡톡.
+    </div>
+  </section>
+
+  <div class="older">
+    <div class="sec-h">지난 영상 속 제품</div>
+
+    <div class="card" id="n2">
+      <div class="no">2번</div>
+      <img src="mount.jpg" alt="스위코 맥세이프 무한흡착 거치대">
+      <div class="body">
+        <div class="ep">차량용인데 주방·책상에도 붙여 쓰는 거치대</div>
+        <div class="name">스위코 맥세이프 무한흡착 핸드폰 거치대</div>
+        <div class="meta">
+          바닥 링을 돌리면 진공으로 붙고, 폰은 자석(맥세이프)으로 붙여요<br>
+          쿠팡 별점 <span class="num">4.5</span> · 후기 7,012개 (2026년 11월 5일 기준)<br>
+          맥세이프 지원 폰(아이폰 12 이후)이나 자석 링을 붙인 폰에 맞아요.
+        </div>
+        <a class="btn" href="https://link.coupang.com/a/ipEZd0vdLg" rel="sponsored nofollow">쿠팡에서 가격 보기</a>
       </div>
-      <a class="btn" href="https://link.coupang.com/a/ipx0oDpgKy" rel="sponsored nofollow">쿠팡에서 가격 보기</a>
+    </div>
+
+    <div class="card" id="n1">
+      <div class="no">1번</div>
+      <img src="carbon.jpg" alt="곰표한일 EMF 카본 탄소매트">
+      <div class="body">
+        <div class="ep">히터 틀고 자면 한 달 4만 원</div>
+        <div class="name">곰표한일 EMF 카본 탄소매트</div>
+        <div class="meta">
+          하룻밤(8시간) 약 <span class="num">290원</span> · 소비전력 170W<br>
+          쿠팡 별점 <span class="num">4.7</span> · 후기 14,831개 (2026년 11월 5일 기준)<br>
+          전기료는 정격 소비전력 × 8시간 × 한전 2단계 요금(214.6원/kWh)으로 계산한 최대치예요.
+        </div>
+        <a class="btn" href="https://link.coupang.com/a/ipx0oDpgKy" rel="sponsored nofollow">쿠팡에서 가격 보기</a>
+      </div>
     </div>
   </div>
 
   <footer>
-    가격·별점·후기 수는 쿠팡에서 바뀔 수 있어요.<br>
+    가격·별점·후기 수는 쿠팡에서 바뀔 수 있어요. (2026년 11월 7일 기준)<br>
     © 비비안의 건강한 살림 · youtube.com/@vivian_salim · instagram.com/lady.vivian.seoul
   </footer>
 </div>
